@@ -1,8 +1,10 @@
 # frozen_string_literal: true
+require "active_support"
+require "active_support/rails"
 
 require_relative "strapi_model/version"
-
 module StrapiModel
-  class Error < StandardError; end
-  # Your code goes here...
+  extend ActiveSupport::Autoload
+
+  autoload :Query
 end
