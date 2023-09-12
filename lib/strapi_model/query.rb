@@ -1,3 +1,7 @@
+require 'http'
+require 'json'
+require 'strapi_model/errors'
+
 module StrapiModel
   class Query
     class << self
